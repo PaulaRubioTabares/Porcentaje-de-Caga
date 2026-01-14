@@ -1,0 +1,80 @@
+:root{
+    --primary-color: #27a761;
+    --letter-color: #f0f8ff;
+}
+
+body{
+    margin: 0;
+    font-size: 1.6rem;
+    height: 100%;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+html{
+    font-size: 10px;
+    height: 100%;
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+}
+
+.capa_main{
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa_fondo{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(3rem);
+    background-image: url("../assets/Fondo.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carga_porcentaje{
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--letter-color);
+    text-align: center;
+    text-shadow: -3px 0 1px #000, -5px 3px 2px var(--primary-color);
+}
+
+.carga_bottom{
+    padding: 2.5rem;
+    font-size: 2rem;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    color: var(--letter-color);
+    background-color: var(--primary-color);
+    box-shadow: -3px 0 3px #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.carga_bottom:hover{
+    color: var(--primary-color);
+    background-color: var(--letter-color);
+    box-shadow: 5px 5px 5px #000;
+}
+
+.carga_completa{
+    display: none;
+    color: var(--letter-color);
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-shadow: -3px 0 1px #000, 1px 0 1px #000, -5px 4px 2px var(--primary-color);
+}
