@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    font-size: 1.6rem;
+    height: 100%;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+html{
+    font-size: 10px;
+    height: 100%;
+}
+
+.capa{
+    width: 100%;
+    height: 100%;
+}
+
+.capa_main{
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.capa_fondo{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(1rem);
+    background-image: url("../assets/Fondo.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.carga_porcentaje{
+    font-size: 7rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+}
+
+.carga_bottom{
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: aquamarine;
+    color: rgb(109, 0, 0);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.carga_bottom:hover{
+    background-color: rgb(39, 167, 167);
+    color: aliceblue;
+}
+
+.carga_completa{
+    display: none;
+    color:rgb(39, 167, 167);
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-shadow: 0 0 1.5rem rgb(134, 29, 134);
+}
